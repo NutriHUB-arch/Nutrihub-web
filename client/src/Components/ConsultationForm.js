@@ -45,7 +45,7 @@ const ConsultationForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${process.env.BACKEND}/send-consultation`, {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND}/send-consultation`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
