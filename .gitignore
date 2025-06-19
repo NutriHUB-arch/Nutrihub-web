@@ -3,6 +3,7 @@
 client/node_modules/
 server/node_modules/
 node_modules
+.env
 # Ignore sensitive credentials
 server/google-sheets-credentials.json
 
