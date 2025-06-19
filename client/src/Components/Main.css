@@ -1,0 +1,373 @@
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle at centre, #fefefe 0%, #f3fce7 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.mc{
+  font-weight: 500;
+}
+.hero-content {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+}
+
+.text-area, .image-area {
+  flex: 1;
+}
+
+.main-heading {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1b1b1b;
+}
+
+.highlight-name {
+  color: #9acd32;
+}
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.socials svg {
+  font-size: 38px; 
+  margin: 2px 10px; 
+  color: #003d33;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 10;
+  
+}
+
+.socials svg:hover {
+  color:  #98D300;
+  transform: scale(1.2);
+}
+
+
+.subheading1{
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #444;
+  max-width: 600px;
+}
+.subheading1 b{
+  color: #003d33;
+}
+.sparkle ::after {
+   content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  color: #444;
+  font-size: 1.05rem;
+ 
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+}
+.benefits-list li::before {
+  content: '✔';
+  margin-right: 10px;
+  font-weight: bold;
+  color: #98D300 !important;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+} 
+
+.get-started-btn,
+.success-story-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.get-started-btn {
+  background-color: #003d33;
+  color: white;
+}
+
+.get-started-btn:hover {
+  background-color: #005c4d;
+  transform: scale(1.05);
+}
+
+.success-story-btn {
+  background-color: white;
+  color: #003d33;
+  border: 2px solid #003d33;
+}
+
+.success-story-btn:hover {
+  background-color: #f5fff5;
+  transform: scale(1.05);
+}
+
+.image-area {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  height: 600px;
+  max-width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.soft-background {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #98D300 0%, #A3D41E 54%, rgba(195, 213, 119, 0) 100%);
+  filter: blur(200px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+@media only screen and (max-width: 767px) {
+   .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {  
+    width: 100%;
+    margin-bottom: -50px;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .get-started-btn,
+  .success-story-btn {
+    width: 100%;
+  }
+
+  .soft-background {
+    width: 400px;
+    height: 400px;
+  }
+
+  .main-section-wrapper {
+    padding-top: 90px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .lead.text-muted {
+    font-size: 0.9rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .get-started-btn,
+  .learn-more-btn {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .middleimage {
+    height: 300px;
+  }
+
+  .circle-background {
+    width: 350px;
+    height: 350px;
+  }
+
+  .floating-image {
+    width: 40px;
+  }
+  .benefits-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+  .icon-top-left { top: 5%; left: 2%; }
+  .icon-mid-left { top: 35%; left: -2%; }
+  .icon-bottom-left { top: 65%; left: 2%; }
+  .icon-top-right { top: 10%; right: 2%; }
+  .icon-mid-right { top: 40%; right: -2%; }
+  .icon-bottom-right { top: 70%; right: 2%; }
+    
+}
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    height: 390px;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .get-started-btn,
+  .success-story-btn {
+    width: 100%;
+  }
+
+  .soft-background {
+    width: 400px;
+    height: 400px;
+  }
+
+  .main-section-wrapper {
+    padding-top: 90px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .lead.text-muted {
+    font-size: 0.9rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .get-started-btn,
+  .learn-more-btn {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .middleimage {
+    height: 300px;
+  }
+
+  .circle-background {
+    width: 350px;
+    height: 350px;
+  }
+
+  .floating-image {
+    width: 40px;
+  }
+  .benefits-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+  .icon-top-left { top: 5%; left: 2%; }
+  .icon-mid-left { top: 35%; left: -2%; }
+  .icon-bottom-left { top: 65%; left: 2%; }
+  .icon-top-right { top: 10%; right: 2%; }
+  .icon-mid-right { top: 40%; right: -2%; }
+  .icon-bottom-right { top: 70%; right: 2%; }
+}
+
+@media (min-width: 1025px) {
+  .profile-image {
+    height: 540px;
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .main-section-wrapper {
+    padding-top: 120px;
+  }
+
+  .middleimage {
+    height: 400px;
+  }
+
+  .circle-background {
+    width: 450px;
+    height: 450px;
+  }
+
+  .floating-image {
+    width: 50px;
+  }
+
+  .icon-top-left { top: 10%; left: 5%; }
+  .icon-mid-left { top: 40%; left: 0%; }
+  .icon-bottom-left { top: 70%; left: 5%; }
+  .icon-top-right { top: 15%; right: 5%; }
+  .icon-mid-right { top: 45%; right: 0%; }
+  .icon-bottom-right { top: 75%; right: 5%; }
+}
+

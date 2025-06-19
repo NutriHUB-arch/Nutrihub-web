@@ -1,0 +1,199 @@
+.specialties-slider {
+  background: linear-gradient(to right, #98d300, #eaf7cb, #9cd40d);
+  margin-top: 180px;
+}
+
+.specialties-container {
+  border-radius: 12px;
+  max-width: 1500px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 80px 20px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 70px; 
+  font-family: "Segoe UI", sans-serif;
+}
+
+.heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  color: #003d33;
+}
+
+.subheading {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.specialty-card {
+  background-color: #f5ffdb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 6px solid #f8f9f5;
+  justify-content: space-between;
+  height: 260px;
+  width: 100%;
+  text-align: left;
+}
+
+.specialty-card:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(
+    to bottom right,
+    #084210 0%,
+    #0e7d1d 19%,
+    #084210 49%,
+    #0e791d 74%,
+    #084210 100%
+  );
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.specialty-card:hover,
+.specialty-card:hover * {
+  color: #e2fddc !important;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #0c4016;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+  font-weight: 400;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.specialties-container .swiper {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background-color: #444;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0e7d1d;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .specialties-slider {
+    margin-top: 100px;
+  }
+  
+  .specialties-container {
+    padding: 85px 15px;
+    padding-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 1.8rem;
+  }
+  
+  .subheading {
+    font-size: 0.9rem;
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+    padding: 0 20px;
+  }
+  
+  .specialty-card {
+    height: auto;
+    min-height: 220px;
+    padding: 1.2rem;
+  }
+  
+  .icon {
+    font-size: 2rem;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .specialties-container {
+    margin: 15px auto;
+    padding: 60px 20px 30px 20px;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 1.6rem;
+    margin-top: 10px ;
+  }
+  
+  .subheading {
+    font-size: 0.85rem;
+    padding: 0 15px;
+  }
+  
+  .specialty-card {
+    padding: 1rem;
+    min-height: 260px;
+    margin-bottom: -18px;
+  }
+  
+  .icon {
+    font-size: 40px;
+    margin-bottom: 28px;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+

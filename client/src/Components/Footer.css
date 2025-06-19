@@ -1,0 +1,306 @@
+.footer {
+  background: linear-gradient(to bottom, #f4ffe3, #b2e74e);
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1500px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+}
+
+.footer-left {
+  max-width: 500px;
+  text-align: left;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.footer-description {
+  margin-top: 15px;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-contact {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+  text-align: left;
+  margin-right: 50px;
+}
+.link-group{
+  margin-left: 20px;
+}
+
+.link-group h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.link-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-group ul li {
+  margin-bottom: 10px;
+}
+
+.link-group ul li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.link-group ul li a:hover {
+  color: #7fc41c;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  border-top: 1px solid #c7e59f;
+  padding-top: 10px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.social-icons {
+  bottom: 45px;
+  right: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 10;
+  justify-content: center;
+  
+}
+
+.social-icons a {
+  color: black;   
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1a1a1a;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #1a1a1a;
+}
+
+.contact-icons svg {
+  font-size: 20px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover svg {
+  color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+  
+  .footer-container {
+    padding: 1.5rem;
+    gap: 25px;
+    text-align: center;
+  }
+  
+  .footer-left {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  
+  .footer-contact {
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  
+  .footer-links {
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .link-group {
+    text-align: center;
+  }
+  
+  .link-group h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .link-group ul li a {
+    font-size: 14px;
+  }
+  
+  .social-icons {
+    justify-content: center;
+    gap: 20px;
+    position: static;
+  }
+  
+  .social-icons a {
+    font-size: 30px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .contact-icons {
+    align-items: center;
+  }
+  
+  .contact-icons a {
+    font-size: 14px;
+  }
+  
+  .contact-icons svg {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 15px;
+    border-radius: 10px;
+  }
+  
+  .footer-container {
+    padding: 1rem;
+    gap: 20px;
+  }
+  
+  .footer-logo {
+    font-size: 20px;
+  }
+  
+  .footer-description {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  
+  .footer-contact {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .footer-links {
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    ;
+  }
+  .link-group {
+    text-align: center;
+    
+  }
+  
+  .link-group h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .link-group ul li {
+    margin-bottom: 8px;
+  }
+  
+  .link-group ul li a {
+    font-size: 12px;
+   
+  }
+  
+  .social-icons a {
+    font-size: 17px;
+    gap: 1px;
+  }
+  
+  .footer-bottom {
+    font-size: 11px;
+    margin-top: 15px;
+  }
+  
+  .contact-icons a {
+    font-size: 13px;
+  }
+  
+  .contact-icons svg {
+    font-size: 16px;
+  }
+} 

@@ -1,0 +1,131 @@
+.faq-wrapper {
+  background-color: white;
+}
+.faq-container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: white;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.faq-title {
+  font-size:2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.faq-subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px 20px;
+  background-color: #FCFCFC;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #111;
+}
+
+.faq-answer {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+  font-weight: 450;
+  font-family: "gilroy-Medium";
+}
+
+
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 35px 15px;
+  }
+  
+  .faq-title {
+    font-size: 1.8rem;
+  }
+  
+  .faq-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    padding: 0 10px;
+  }
+  
+  .faq-item {
+    padding: 14px 16px;
+  }
+  
+  .faq-question {
+    font-size: 18px;
+  }
+  
+  .faq-answer {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-container {
+    padding: 30px 10px;
+  }
+  
+  .faq-title {
+    font-size: 1.6rem;
+  }
+  
+  .faq-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    padding: 0 5px;
+  }
+  
+  .faq-list {
+    gap: 12px;
+  }
+  
+  .faq-item {
+    padding: 12px 14px;
+  }
+  
+  .faq-question {
+    font-size: 16px;
+    gap: 10px;
+  }
+  
+  .faq-answer {
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+}

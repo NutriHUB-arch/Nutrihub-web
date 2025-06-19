@@ -1,0 +1,152 @@
+.banner-container {
+ background: linear-gradient(to bottom right, #98d300, #eaf7cb, #9cd40d);
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 378px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin: 120px auto;
+  max-width: 1299px;
+  width: 90%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-section:hover {
+  transform: scale(1.02);
+}
+
+.nutrihub-logo {
+  width: 100%;
+  max-width: 553px;
+  height: auto;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.text-content {
+  text-align: left;
+}
+
+.nutrihub-title {
+  font-size: 48px;
+  color: #023e10;
+  font-weight: 500;
+  /* line-height: 40px; */
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.nutrihub-subtitle {
+  font-family: 'Poppins', sans-serif;
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 10px 0;
+  border-bottom: 2px solid #9acd32;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.slogan {
+  margin-top: 30px;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.slogan h2 {
+  font-size: clamp(24px, 4vw, 32px);
+  color: #084210;
+  margin-bottom: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #084210;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: clamp(16px, 2.5vw, 18px);
+  color: #084210;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    padding: 30px 15px;
+    margin: 90px auto;
+    min-height: 300px;
+  }
+
+  .logo-img {
+    width: 80px;
+  }
+
+  .nutrihub-title {
+    font-size: 36px;
+  }
+
+  .nutrihub-subtitle {
+    font-size: 18px;
+  }
+
+  .slogan {
+    padding: 0 10px;
+  }
+
+  .slogan h2 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
+    padding: 20px 10px;
+    margin: 90px auto;
+    min-height: 250px;
+  }
+
+  .logo-img {
+    width: 55px;
+  }
+
+  .logo-section {
+    margin-bottom: 20px;
+  }
+
+  .nutrihub-title {
+    font-size: 28px;
+  }
+
+  .nutrihub-subtitle {
+    font-size: 16px;
+  }
+
+  .slogan {
+    margin-top: 20px;
+  }
+
+  .slogan h2 {
+    font-size: 20px;
+  }
+}
