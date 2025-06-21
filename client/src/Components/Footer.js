@@ -19,7 +19,7 @@ export default function Footer() {
               <FontAwesomeIcon icon={faLocationDot} />
               <span>Ujjain, Madhya Pradesh</span>
             </a>
-            <a href="tel:+919301902225">
+            <a href="tel:+91-9301902225">
               <FontAwesomeIcon icon={faPhone} />
               <span>+91-9301902225</span>
             </a>

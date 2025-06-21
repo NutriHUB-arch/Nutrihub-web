@@ -8,7 +8,7 @@ export default function About() {
       <div className="stats-box row mx-auto mb-8 px-2 text-center ">
         <div className="col-6 col-md-3 stat-item">
           <h3>3+</h3>
-          <p>Total Industries</p>
+          <p>Total Centers</p>
         </div>
         <div className="col-6 col-md-3 stat-item">
           <h3>150+</h3>
