@@ -47,6 +47,7 @@ export default function About() {
           </div>
         </div>
         <div className="col-md-6 px-4">
+          <em>
           <ul className="list-unstyled mt-3 flex3">
             <li className="credential-item mb-3 p-3 rounded-3 shadow-sm">
               <div className="checkmark">✓</div> Certified Clinical Nutritionist
@@ -62,6 +63,7 @@ export default function About() {
               <div className="checkmark">✓</div> 500+ Successful Transformations
             </li>
           </ul>
+          </em>
         </div>
       </div>
     </div>

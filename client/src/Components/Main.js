@@ -57,10 +57,10 @@ export default function Main() {
     <div className="hero-section">
       <div className="hero-content">
         <div className="text-area">
-          <h1 className="main-heading">
-            Transform Your Health with <br />
+          <b><h1 className="main-heading">
+            Transform Your<br /> Health with <br />
             <span className="highlight-name"><p className='sparle'>Megha Chandel</p></span>
-          </h1>
+          </h1></b>
           <p className="subheading1">
             <div className="mc">Unlock your transformation with Megha Chandel!</div> As a certified nutrition expert with <b>18 years</b> of experience, she's guided over <b>1000+ clients</b> to remarkable results.
           </p>
@@ -80,7 +80,7 @@ export default function Main() {
                     <a href="https://www.instagram.com/dieticianmegha/" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={faInstagram} className="social-icon instagram" />
                     </a>
-                    <a href="https://wa.me/9301902225" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919301902225" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={faWhatsapp} className="social-icon whatsapp" />
                     </a>
                     <a href="https://www.facebook.com/dieticianmegha/" target="_blank" rel="noopener noreferrer">

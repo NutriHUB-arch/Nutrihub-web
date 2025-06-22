@@ -4,6 +4,8 @@
   background: radial-gradient(circle at centre, #fefefe 0%, #f3fce7 100%);
   display: flex;
   flex-direction: column;
+  font-family: 'Mulish', 'Work Sans', sans-serif;
+  /* font-size: 68px; */
   align-items: center;
   justify-content: center;
   padding: 120px 20px;
@@ -26,10 +28,9 @@
 .text-area, .image-area {
   flex: 1;
 }
-
-.main-heading {
-  font-size: 3.2rem;
-  font-weight: 800;
+.main-heading{
+  font-size: 100px;
+  font-weight: 900;
   line-height: 1.2;
   color: #1b1b1b;
 }
@@ -44,7 +45,7 @@
   gap: 20px;
 }
 .socials svg {
-  font-size: 38px; 
+  font-size: 30px; 
   margin: 2px 10px; 
   color: #003d33;
   transition: transform 0.3s ease;
@@ -190,6 +191,7 @@
 
   .main-heading {
     font-size: 2rem;
+    font-weight: 800;
   }
 
   .cta-buttons {
@@ -270,6 +272,7 @@
 
   .main-heading {
     font-size: 2rem;
+    font-weight: 800;
   }
 
   .cta-buttons {
@@ -342,8 +345,9 @@
     height: 540px;
   }
 
-  .main-heading {
-    font-size: 2.5rem;
+  .main-heading{
+    font-size: 56px;
+    font-weight: 800;
   }
 
   .main-section-wrapper {

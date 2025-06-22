@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../Images/l.svg";
-import txt from "../Images/text.svg";
+// import txt from "../Images/text.svg";
 
 export default function Navbar(props) {
   const [activeSection, setActiveSection] = useState("home");
@@ -72,8 +72,9 @@ export default function Navbar(props) {
             handleNavClick("home");
           }}
         >
+          {/* <img src={logo} alt="Logo Icon" className="navbar-logo" />
+          <img src={txt} alt="Logo Text" className="navbar-logo2" /> */}
           <img src={logo} alt="Logo Icon" className="navbar-logo" />
-          <img src={txt} alt="Logo Text" className="navbar-logo2" />
         </div>
         <ul className="navbar-center">
           <li className="nav-item">

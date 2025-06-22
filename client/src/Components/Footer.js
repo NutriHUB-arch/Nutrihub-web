@@ -52,7 +52,7 @@ export default function Footer() {
                 <a href="https://www.instagram.com/dieticianmegha/" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
-                <a href="https://wa.me/9301902225" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/919301902225" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faWhatsapp} />
                 </a>
                 <a href="https://www.facebook.com/dieticianmegha/" target="_blank" rel="noopener noreferrer">

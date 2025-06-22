@@ -12,7 +12,7 @@
 .about-section {
   animation: fadeSlideUp 1s ease-in-out;
   background: #ffffff;
-  font-family: "Clash Display";
+  font-family: 'Mulish', 'Work Sans', sans-serif;
   font-weight: 500;
   max-width: 1500px;
   justify-content: center;
@@ -38,8 +38,8 @@
   box-shadow: 0 1px 24px rgba(0, 0, 0, 0.1);
   color: white;
   max-width: 1300px;
-  font-family: "Gilroy-Medium";
-  font-weight: 500;
+  font-family: 'Mulish', 'Work Sans', sans-serif;
+  font-weight: semibold;
   border: 7px solid white;
   height: 254px;
   justify-content: center;
@@ -51,20 +51,22 @@
 }
 
 .status-box h3 p {
-  font-family: "Gilroy-Medium";
+  font-family: 'Mulish', 'Work Sans', sans-serif;
+
 }
 
 .stat-item h3 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 0.25rem;
-  font-family: "Clash Display";
+  font-family: 'Mulish', 'Work Sans', sans-serif;
+
 }
 
 .stat-item p {
   font-size: 24px;
   color: #f0f0f0;
-  font-family: "Clash Display";
+  font-family: 'Mulish', 'Work Sans', sans-serif;
 }
 
 
